@@ -161,7 +161,7 @@ a:active { /* selected link */
 }
 
 
-#hero, #work, #about-page {
+#hero, #work, #about-page, #work-page {
   background-color: #0B0C10;
   padding: 20px 0;
   display: inline-block;
