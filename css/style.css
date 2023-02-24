@@ -114,6 +114,8 @@ a:active { /* selected link */
   .me{
     /* styles for my about image*/
     max-width: 150px;
+    display: block; 
+    margin: 0 auto;
     text-align: center;
   }
   
@@ -161,7 +163,7 @@ a:active { /* selected link */
 }
 
 
-#hero, #work, #about-page, #work-page {
+#hero, #work, #about-page, #project-page {
   background-color: #0B0C10;
   padding: 20px 0;
   display: inline-block;
