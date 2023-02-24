@@ -5,12 +5,14 @@ Secondary Color (White): #C7C7C7
 Secondary Color (Yellow): #EFBD07;
 */
 
-header {
+
+
+html {
   background-color: #0B0C10;
-  padding: 5px 0;
-  position: relative;
-  box-shadow: 0px 5px 5px 0px #C7C7C7;
+
 }
+
+
 
 
 
@@ -25,14 +27,22 @@ body{
 }
 
 
-img {
-    width: 100%;
+header {
+  background-color: #0B0C10;
+  text-align: right;
+  padding: 10px 0;
+  border-bottom: 3px solid #C7C7C7;
+  position: fixed;
+  box-shadow: 0px 7px 14px -8px #C7C7C7;
+  width: 100%;
 }
 
-.logo{
-  /* styles for all imgs EXCEPT .dontselect */
-  text-align: left;
-  width: 8%;
+
+
+
+
+img {
+    width: 100%;
 }
 
 
@@ -73,14 +83,6 @@ a {
 
 
 
-  #contact, #index-page, #work-page, #about-page {
-    background-color: #0B0C10;
-    padding: 16px 0;
-    text-align: center; /* Centers text */
-}
-
-
-
   
 a:hover {
     color: #C7C7C7;
@@ -88,7 +90,7 @@ a:hover {
   }
 
 a:visited { /* visited link */
-    color: purple;
+    color: rgb(117, 21, 161);
   }
 
 a:active { /* selected link */
@@ -97,17 +99,31 @@ a:active { /* selected link */
 
   a:hover,
   a:focus {
-    color: #AD0000;
+    color: #C7C7C7;
     text-decoration: underline;
   }
 
+
+
+  .logo{
+    /* styles for logo image*/
+    max-width: 80px;
+    float: left;
+  }
+  
+  .me{
+    /* styles for my about image*/
+    max-width: 150px;
+    text-align: center;
+  }
+  
 
   .button {
     display: inline-block;
     background-color: #EFBD07;
     color: #C7C7C7; /* needed to override the default link color */
     font-weight: 400;
-    padding: 10px;
+    padding: 10px ;
     border-radius: 5px;
     border-bottom: 2px solid #EFBD07; /* width of the border, type, color */
     transition: 0.2s opacity;
@@ -123,16 +139,92 @@ a:active { /* selected link */
     color: #EFBD07;
     text-transform: uppercase;
     border: 2px solid #EFBD07;
+    margin: 20px;
   }
-
-
+  
+  
   .button.contact:hover {
     background-color: #EFBD07;
     color: #C7C7C7;
   }
-
-
+  
   
 
+/* Layout styling */
+
+.container {
+  padding:0 15px;
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
 
 
+#hero, #work, #about-page {
+  background-color: #0B0C10;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+
+#hero h1 {
+  text-align: center; /* Centers text */
+}
+
+
+#work h2 {
+  text-align: center; /* Centers text */
+}
+
+
+#about-page h1, h2 {
+  text-align: center; /* Centers text */
+}
+
+
+#contact {
+  background-color: #0B0C10;
+  padding: 20px 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  border-top: 3px solid #C7C7C7;
+}
+
+
+#contact h2 {
+  text-align: center; /* Centers text */
+}
+
+
+
+
+/* navigation styling */
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  max-width: 100%;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  position: relative;
+}
+
+nav > ul > li > a:visited { /* visited link */
+  color: rgb(102, 0, 128);
+}
+
+main {
+  padding-top: 133px;
+}
