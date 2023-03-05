@@ -70,7 +70,10 @@ h4 {
 }
 
 
-
+svg {
+  /* styles for images*/
+  text-align: center;
+}
   
   
   img {
@@ -173,7 +176,7 @@ a:hover {
 
 #hero, #work {
   background-color: #0B0C10;
-  padding: 20px 30px;
+  padding: 15px 30px;
   display: inline-block;
   width: 100%;
   text-align:center;
@@ -240,7 +243,7 @@ nav > ul > li > a {
 }
 
 main {
-  padding-top: 80px;
+  padding-top: 15px;
 }
 
 /*==== Media Queries */
@@ -254,7 +257,7 @@ main {
 
 [class*="col-"] {
   float: left;
-  padding: 20px;
+  padding: 15px;
 }
 
 
@@ -264,7 +267,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
   header{
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 15px 0 13px;
     margin: 0 auto;
   }
 
@@ -278,6 +281,12 @@ Medium devices (640px and larger)
   width: 50%;
 }
 
+
+svg {
+  /* styles for images*/
+  text-align: center;
+}
+
 }
 
 /* ==============================
@@ -286,7 +295,7 @@ Large devices (1024px or larger)
 @media only screen and (min-width: 1024px) {
   header{
     text-align: unset;
-    padding: 20px 0 13px;
+    padding: 15px 0 13px;
     margin: 0 auto;
   }
 
@@ -305,6 +314,12 @@ Large devices (1024px or larger)
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+svg {
+  /* styles for images*/
+  text-align: center;
 }
 
 }
