@@ -32,7 +32,7 @@ body{
     background-color: #0B0C10;
     font-family: 'Oswald', sans-serif;
     font-family: 'Playfair Display', serif;
-    font-size: 18px; /* sets the font size to 18px */
+    font-size: 16px; /* sets the font size to 16px */
     font-weight: 400; /* sets the font weight to 300 */
     line-height: 1.6; /* sets the line-height to 1.6 for font size*/
     color: #C7C7C7;
@@ -161,6 +161,7 @@ a:hover {
 
 .container {
   padding:0 10px;
+  text-align:center;
 }
 
 .row {
