@@ -69,11 +69,6 @@ h4 {
     font-weight: 400;
 }
 
-
-svg {
-  /* styles for images*/
-  text-align: center;
-}
   
   
   img {
@@ -260,6 +255,10 @@ main {
   padding: 15px;
 }
 
+svg{
+  viewport-fit: auto;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -282,10 +281,6 @@ Medium devices (640px and larger)
 }
 
 
-svg {
-  /* styles for images*/
-  text-align: center;
-}
 
 }
 
@@ -316,11 +311,6 @@ Large devices (1024px or larger)
   margin-right: auto;
 }
 
-
-svg {
-  /* styles for images*/
-  text-align: center;
-}
 
 }
 
