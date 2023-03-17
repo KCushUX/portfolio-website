@@ -19,9 +19,9 @@ html, #index-page, #about-page, #project-page {
 
 header {
   background-color: #0B0C10;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   margin: 0 auto;
-  text-align: center;
+  /*text-align: center;*/
   position: relative;
   border-bottom: 3px solid #C7C7C7;
   box-shadow: 40px 7px 14px -8px #C7C7C7;
@@ -224,12 +224,9 @@ nav {
 nav > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
-nav > ul > li {
-  display: inline-block;
-  max-width: 100%;
-}
 
 nav > ul > li > a {
   padding: 0 15px;
@@ -241,6 +238,87 @@ nav > ul > li > a {
 main {
   padding-top: 15px;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #C7C7C7;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
+
+
+
+
+/* CSS Animation */
+
+
+#UI {
+  animation: fadeInUp 4s;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#bolt g {
+  opacity: 0;
+  animation: dropIn 10s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--order) * 200ms);
+  animation-iteration-count: infinite;
+}
+  
+
+@keyframes dropIn {
+  20% {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  30%, 100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+
+
+
+
 
 /*==== Media Queries */
 
@@ -265,6 +343,8 @@ svg{
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+
+
   header{
     text-align: unset;
     padding: 15px 0 13px;
@@ -277,9 +357,27 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
+  nav > ul > li {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .col-md-6 {
   width: 50%;
 }
+
+nav > ul {
+  margin: 1em 0;
+}
+
 
 
 
@@ -311,6 +409,22 @@ Large devices (1024px or larger)
   margin-left: auto;
   margin-right: auto;
 }
+
+#navigation {
+  animation: fadeInRight 2s;
+      }
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+    }
 
 
 }
@@ -364,61 +478,3 @@ Extra-large devices (1920px or larger)
 
 
 
-/* CSS Animation */
-
-
-#navigation {
-  animation: fadeInRight 2s;
-      }
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(40%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-    }
-
-
-#UI {
-  animation: fadeInUp 4s;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-#bolt g {
-  opacity: 0;
-  animation: dropIn 10s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  animation-delay: calc(var(--order) * 200ms);
-  animation-iteration-count: infinite;
-}
-  
-
-@keyframes dropIn {
-  20% {
-    opacity: 0;
-    transform: translateY(-20%);
-  }
-
-  30%, 100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-}
