@@ -331,12 +331,11 @@ main {
 
 [class*="col-"] {
   float: left;
+  display: inline-block;
   padding: 15px;
 }
 
-svg{
-  viewport-fit: auto;
-}
+
 
 
 /* ==============================
