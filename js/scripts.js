@@ -16,3 +16,8 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 2000);
 });
+
+$('#click_advance').click(function() {
+    $('#display_advance').toggle('1000');
+    $("i", this).toggleClass("fas fa-bars fas fa-x");
+});
