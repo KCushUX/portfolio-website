@@ -10,7 +10,10 @@ Secondary Color (Yellow): #EFBD07;
   box-sizing: border-box;
 }
 
-html, #index-page, #about-page, #project-page {
+html,
+#index-page,
+#about-page,
+#project-page {
   background-color: #0B0C10;
 }
 
@@ -28,154 +31,233 @@ header {
 }
 
 
-body{
-    background-color: #0B0C10;
-    font-family: 'Oswald', sans-serif;
-    font-family: 'Playfair Display', serif;
-    font-size: 16px; /* sets the font size to 16px */
-    font-weight: 400; /* sets the font weight to 300 */
-    line-height: 1.6; /* sets the line-height to 1.6 for font size*/
-    color: #C7C7C7;
+body {
+  background-color: #0B0C10;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+  /* sets the font size to 16px */
+  font-weight: 400;
+  /* sets the font weight to 300 */
+  line-height: 1.6;
+  /* sets the line-height to 1.6 for font size*/
+  color: #C7C7C7;
 }
 
 
 
 
 
-h1, h2, h3, h4 {
-    line-height: 1.4;
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
 }
 
-h1{
-    font-family: oswald;
-    font-size: 2.75em;
-    font-weight: 700;
+h1 {
+  font-family: oswald;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
 h2 {
-    font-family: oswald;
-    font-size: 2.25em;
-    font-weight: 700;
+  font-family: oswald;
+  font-size: 2.25em;
+  font-weight: 700;
 }
 
 h3 {
-    font-family: oswald;
-    font-size: 1.75em;
-    font-weight: 400;
+  font-family: oswald;
+  font-size: 1.75em;
+  font-weight: 400;
 }
 
 h4 {
-    font-size: 1.35em;
-    font-weight: 400;
-}
-
-  
-  
-  img {
-    /* styles for images*/
-    width: 70%;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 
 
 
-.logo{
+img {
+  /* styles for images*/
+  width: 70%;
+}
+
+
+
+.logo {
   /* styles for logo image*/
   max-width: 80px;
   float: left;
 }
 
-.me{
+.me {
   /* styles for my about image*/
   max-width: 150px;
-  display: block; 
+  display: block;
   margin: 0 auto;
   text-align: center;
 }
 
-.socials{
+.socials {
   /* styles for social logos*/
-    display: inline-block;
-    width: 50px;
-    text-align: center;
-    padding: 10px;
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+  padding: 10px;
 }
 
 
 a {
   color: #EFBD07;
-  text-decoration: none; /* No underlining */
+  text-decoration: none;
+  /* No underlining */
 }
 
 a:hover {
   color: #cc6540;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
 }
-  
-
-
-.active a { /* selected link */
-    color: #C7C7C7;
-  }
-
-  a:hover {
-    color: #C7C7C7;
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
 
 
 
-  .button {
-    display: inline-block;
-    background-color: #EFBD07;
-    font-family: oswald;
-    color: #0B0C10; /* needed to override the default link color */
-    font-weight: 400;
-    padding: 10px ;
-    border-radius: 3px;
-    border-bottom: 2px solid #EFBD07; /* width of the border, type, color */
-    transition: 0.2s opacity;
-  }
+.active a {
+  /* selected link */
+  color: #C7C7C7;
+}
 
-  .button:hover {
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    text-decoration: none;
-  }
+a:hover {
+  color: #C7C7C7;
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
 
-  .button.contact {
-    background-color: transparent;
-    color: #EFBD07;
-    text-transform: uppercase;
-    border: 2px solid #EFBD07;
-    margin: 20px;
-  }
-  
-  
-  .button.contact:hover {
-    background-color: #EFBD07;
-    color: #0B0C10;
-  }
-  
-  
+
+/* //////// Buttons and menus /////// */
+.button {
+  display: inline-block;
+  background-color: #EFBD07;
+  font-family: oswald;
+  color: #0B0C10;
+  /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 5px;
+  border-bottom: 2px solid #EFBD07;
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #EFBD07;
+  text-transform: uppercase;
+  border: 2px solid #EFBD07;
+  margin: 20px;
+}
+
+
+.button.contact:hover {
+  background-color: #EFBD07;
+  color: #0B0C10;
+}
+
+
+#topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 30px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #EFBD07; /* Set a background color */
+  color: #0B0C10; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#topBtn:hover {
+  background-color: #ad9114; /* Add a dark-grey background on hover */
+}
+
+#jmpMenu {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  top: 0px; /* Place the button at the top of the page */
+  margin: 0;
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #0B0C10; /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 5px; /* Some padding */ 
+  font-size: 18px; /* Increase font size */
+}
+
+#jmpMenu > ul {
+  margin: auto;
+  width: 100vw;
+  padding: 5px;
+}
+
+#jmpMenu > ul > li {
+  display: inline-block;
+  padding: 20px;
+}
+
+#jmpMenu > ul > li > a {
+  padding: 0 10px;
+  border-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #EFBD07;
+}
+
+
+
+
+
+
 
 /* Layout styling */
 
 .container {
-  padding:0 10px;
-  text-align:center;
+  padding: 0 10px;
+  text-align: center;
+}
+
+
+.container > ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 .row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
 }
 
 
 
-#hero, #work {
+#hero,
+#work {
   background-color: #0B0C10;
   padding: 15px 30px;
   display: inline-block;
   width: 100%;
-  text-align:center;
+  text-align: center;
 }
 
 #hero span {
@@ -183,17 +265,21 @@ a:hover {
 }
 
 #hero h1 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 
 #work h2 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 
-#about-page h1, h2 {
-  text-align: center; /* Centers text */
+#about-page h1,
+h2 {
+  text-align: center;
+  /* Centers text */
 }
 
 
@@ -208,7 +294,8 @@ a:hover {
 
 
 #contact h2 {
-  text-align: center; /* Centers text */
+  text-align: center;
+  /* Centers text */
 }
 
 
@@ -221,14 +308,14 @@ nav {
   width: 100%;
 }
 
-nav > ul {
+nav>ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 
-nav > ul > li > a {
+nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -243,7 +330,8 @@ main {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -258,13 +346,14 @@ main {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #C7C7C7;
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -300,7 +389,7 @@ main {
   animation-delay: calc(var(--order) * 200ms);
   animation-iteration-count: infinite;
 }
-  
+
 
 @keyframes dropIn {
   20% {
@@ -308,7 +397,8 @@ main {
     transform: translateY(-20%);
   }
 
-  30%, 100% {
+  30%,
+  100% {
     opacity: 1;
     transform: translateY(0);
   }
@@ -344,19 +434,19 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
 
 
-  header{
+  header {
     text-align: unset;
     padding: 15px 0 13px;
     margin: 0 auto;
   }
 
   nav {
-    width:auto;
+    width: auto;
     float: right;
     margin-top: 4px;
   }
 
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
     max-width: 100%;
   }
@@ -370,12 +460,12 @@ Medium devices (640px and larger)
   }
 
   .col-md-6 {
-  width: 50%;
-}
+    width: 50%;
+  }
 
-nav > ul {
-  margin: 1em 0;
-}
+  nav>ul {
+    margin: 1em 0;
+  }
 
 
 
@@ -386,50 +476,50 @@ nav > ul {
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  header{
+  header {
     text-align: unset;
     padding: 15px 0 13px;
     margin: 0 auto;
   }
 
   nav {
-    width:auto;
+    width: auto;
     float: right;
     margin-top: 4px;
   }
 
   .col-lg-5 {
-  width: 41.66%;
-}
-
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#navigation {
-  animation: fadeInRight 2s;
-      }
-
-@keyframes fadeInRight {
-  from {
-    opacity: 0;
-    transform: translateX(40%);
+    width: 41.66%;
   }
 
-  to {
-    opacity: 1;
-    transform: translateX(0);
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
+
+  #navigation {
+    animation: fadeInRight 2s;
+  }
+
+  @keyframes fadeInRight {
+    from {
+      opacity: 0;
+      transform: translateX(40%);
     }
 
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
 
 }
 
 
- 
+
 
 /* ==============================
 X-large devices (1440px or larger)
@@ -474,6 +564,5 @@ Extra-large devices (1920px or larger)
 ================================= */
 /*@media only screen and (min-width: 1920px) {
 }*/
-
 
 
