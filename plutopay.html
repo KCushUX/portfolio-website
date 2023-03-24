@@ -12,7 +12,8 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Playfair+Display&display=swap"
+    rel="stylesheet">
 </head>
 
 <body id="project-page">
@@ -22,20 +23,33 @@
 
     <div class="container"><!-- For the navigation -->
       <div class="navtoggle" id="myNavtoggle">
-      <a href="index.html"> <img src="img/logo_one.png" class="logo" alt="K. Cush"></a>
-      <nav>
-        <ul id="navigation">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
-          <li><p id="click_advance"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></p></li>  
-        </ul>
-      </nav>
+        <a href="index.html"> <img src="img/logo_one.png" class="logo" alt="K. Cush"></a>
+        <nav>
+          <ul id="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+            <li>
+              <p id="click_advance"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                    class="fas fa-bars"></i></a></p>
+            </li>
+          </ul>
+        </nav>
       </div>
     </div>
   </header>
 
   <main>
+    <div onclick="jumpFunction()" id="jmpMenu">
+      <ul>
+      <li><a href="#overview">Overview</a><br /></li>
+      <li><a href="#market_research">Market Research</a><br /></li>
+      <li><a href="#user_research">User Research</a><br /></li>
+      <li><a href="#persona_journey">Persona and Journey</a><br /></li>
+      <li><a href="#prototyping">Wireframes and Prototypes</a><br /></li>
+      <li><a href="#final_design">Final Design</a><br /></li>
+      </ul>
+    </div>
     <div id="hero">
       <!-- Project section title -->
       <div class="container">
@@ -46,7 +60,8 @@
         </picture>
         <p>
           <!-- Open paragraph -->
-          PlutoPay is a responsive web application that helps users find the fun in completing financial goals. There is a suite of tools that support and challenge users on their financial journeys.
+          PlutoPay is a responsive web application that helps users find the fun in completing financial goals. There is
+          a suite of tools that support and challenge users on their financial journeys.
         </p><!-- End paragraph -->
       </div>
     </div><!-- Project section title end -->
@@ -55,7 +70,7 @@
       <!-- Process start -->
       <div class="container">
         <!-- Section start -->
-        <h2>My process</h2><!-- Section header -->
+        <h2 id="overview">Overview</h2><!-- Section header -->
 
         <h3>Problem statement</h3><!-- Section header -->
         <p>
@@ -69,9 +84,11 @@
         <h3>My solution</h3><!-- Section header -->
         <p>
           <!-- Open paragraph -->
-          Our users need a convenient and interactive way to track and budget their finances because they wish to improve their literacy.
+          Our users need a convenient and interactive way to track and budget their finances because they wish to
+          improve their literacy.
           This application should allow users to simplify and personalize their financial needs.
-          Not only should it include money transferring, security, budgeting, and external account linking but more features to
+          Not only should it include money transferring, security, budgeting, and external account linking but more
+          features to
           entice users to improve.
           Why not integrate a challenge or gaming system into a finance application?
         </p><!-- End paragraph -->
@@ -85,10 +102,14 @@
             <source srcset="img/plutopay/mobileScreens/paypal_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/paypal_one.png" alt="Paypal logo">
           </picture>
-          <h3>Market Research</h3><!-- Section header -->
+          <h3 id="market_research">Market Research</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
-            First, I analyzed competitors like PayPal and Google Pay. I wanted to understand their strengths and weaknesses in a broader sense to find a gap in the market. After conducting market research, I compiled all the information on each competitor and created a S.W.O.T. analysis. This helped me initiate ideas of what users might expect from my app. I also broke down what competitors are doing right to solve their user's problems and ways they are underserving.
+            First, I analyzed competitors like PayPal and Google Pay. I wanted to understand their strengths and
+            weaknesses in a broader sense to find a gap in the market. After conducting market research, I compiled all
+            the information on each competitor and created a S.W.O.T. analysis. This helped me initiate ideas of what
+            users might expect from my app. I also broke down what competitors are doing right to solve their user's
+            problems and ways they are underserving.
           </p><!-- End paragraph -->
         </div>
 
@@ -97,10 +118,13 @@
             <source srcset="img/plutopay/mobileScreens/user_research_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/user_research_one.png" alt="User research">
           </picture>
-          <h3>User research</h3><!-- Section header -->
+          <h3 id="user_research">User research</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
-            I conducted five user interviews, speaking with two participants on March 28th and three on March 29th of 2022. Each participant was excited to help me understand their financial app experiences. Each interviewee had a different career and varying attitudes toward finances. With the data recorded, I had a good amount of information to categorize.
+            I conducted five user interviews, speaking with two participants on March 28th and three on March 29th of
+            2022. Each participant was excited to help me understand their financial app experiences. Each interviewee
+            had a different career and varying attitudes toward finances. With the data recorded, I had a good amount of
+            information to categorize.
           </p><!-- End paragraph -->
         </div>
 
@@ -121,11 +145,12 @@
             <source srcset="img/plutopay/mobileScreens/victoria_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/victoria_one.png" alt="Victoria persona">
           </picture>
-          <h3>User personas and flows</h3><!-- Section header -->
+          <h3 id="persona_journey">User personas and flows</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
             I worked with three user personas: Victoria, Jack, and Kato. These personas
-            were created to help me understand my target audiences. Once I had a general idea of the type of users that would use my application I created a
+            were created to help me understand my target audiences. Once I had a general idea of the type of users that
+            would use my application I created a
             few user flows like the one below to simulate what their work flows would look like within
             the application. Below is a user flow that illustrates what users like Victoria would try to
             accomplish:
@@ -142,7 +167,8 @@
             <!-- Open paragraph -->
             I implemented a hybrid card sort blending the closed and open card sorts.
             Through card sorting, I could see how users interacted with the information being
-            considered for my version of this type of application and validate my hypothesis. Users categorized the content in a way logical to them which helped me
+            considered for my version of this type of application and validate my hypothesis. Users categorized the
+            content in a way logical to them which helped me
             consolidate my site map.
           </p><!-- End paragraph -->
         </div>
@@ -152,7 +178,7 @@
             <source srcset="img/plutopay/mobileScreens/old_wf_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/old_wf_one.png" alt="Original wireframes">
           </picture>
-          <h3>Wireframes</h3><!-- Section header -->
+          <h3 id="prototyping">Wireframes</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
             Once my sitemap was done and I had the structure in my head, I began to create
@@ -185,7 +211,7 @@
             <source srcset="img/plutopay/mobileScreens/new_wf_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/new_wf_one.png" alt="Updated wireframes">
           </picture>
-          <h3>Improved wireframes</h3><!-- Section header -->
+          <h3 id="final_design">Improved wireframes</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
             For my iteration of PlutoPay, I included rewards to entice and make user interactions
@@ -226,7 +252,7 @@
         Do you like my work and want to discuss opportunities?
         <br>
         Please get in touch by calling 631-440-20009 Or send me a message using the button below.
-    </p>
+      </p>
 
       <div>
         <!-- For contact links-->
@@ -238,7 +264,8 @@
 
         <a href="https://www.linkedin.com/in/kwekucush/" target="_blank">
           <!-- LinkedIn Icon -->
-          <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+            xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
             <style type="text/css">
               .st0 {
                 fill: #1387C8;
@@ -249,10 +276,13 @@
               }
             </style>
             <g>
-              <path class="st0" d="M512,397.1c0,63.5-51.4,114.9-114.9,114.9H114.9C51.5,512,0,460.6,0,397.1V114.9C0,51.5,51.5,0,114.9,0h282.2   C460.6,0,512,51.5,512,114.9V397.1z" />
+              <path class="st0"
+                d="M512,397.1c0,63.5-51.4,114.9-114.9,114.9H114.9C51.5,512,0,460.6,0,397.1V114.9C0,51.5,51.5,0,114.9,0h282.2   C460.6,0,512,51.5,512,114.9V397.1z" />
               <g>
-                <path class="st1" d="M142.3,212.9h53.4v171.6h-53.4V212.9z M169,127.5c17.1,0,30.9,13.9,30.9,30.9c0,17.1-13.9,31-30.9,31    c-17.1,0-31-13.9-31-31C138.1,141.4,151.9,127.5,169,127.5" />
-                <path class="st1" d="M229.2,212.9h51.2v23.5h0.7c7.1-13.5,24.5-27.7,50.5-27.7c54,0,64,35.5,64,81.7v94.1h-53.3V301    c0-19.9-0.4-45.5-27.7-45.5c-27.8,0-32,21.7-32,44v84.9h-53.3V212.9z" />
+                <path class="st1"
+                  d="M142.3,212.9h53.4v171.6h-53.4V212.9z M169,127.5c17.1,0,30.9,13.9,30.9,30.9c0,17.1-13.9,31-30.9,31    c-17.1,0-31-13.9-31-31C138.1,141.4,151.9,127.5,169,127.5" />
+                <path class="st1"
+                  d="M229.2,212.9h51.2v23.5h0.7c7.1-13.5,24.5-27.7,50.5-27.7c54,0,64,35.5,64,81.7v94.1h-53.3V301    c0-19.9-0.4-45.5-27.7-45.5c-27.8,0-32,21.7-32,44v84.9h-53.3V212.9z" />
               </g>
             </g>
           </svg>
@@ -263,7 +293,8 @@
       <p>Copyright Kweku Cush 2023</p>
     </div>
   </footer> <!-- Footer end -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
   <script src="https://kit.fontawesome.com/d72eb3ec58.js" crossorigin="anonymous"></script>
 </body>
