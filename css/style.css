@@ -33,7 +33,6 @@ header {
 
 body {
   background-color: #0B0C10;
-  font-family: 'Oswald', sans-serif;
   font-family: 'Playfair Display', serif;
   font-size: 16px;
   /* sets the font size to 16px */
@@ -56,21 +55,21 @@ h4 {
 }
 
 h1 {
-  font-family: oswald;
+  font-family: 'Playfair Display', serif;
   font-size: 2.75em;
   font-weight: 700;
 }
 
 h2 {
-  font-family: oswald;
+  font-family: 'Playfair Display', serif;
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 h3 {
-  font-family: oswald;
+  font-family: 'Playfair Display', serif;
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h4 {
@@ -131,19 +130,19 @@ a:hover {
 
 a:hover {
   color: #C7C7C7;
-  text-decoration: underline;
+  text-decoration: line-through;
   /* Underlining when hovering over a link */
 }
 
 
-/* //////// Buttons and menus /////// */
+/* //////// Buttons /////// */
 .button {
   display: inline-block;
   background-color: #EFBD07;
-  font-family: oswald;
+  font-family: 'Playfair Display', serif;
   color: #0B0C10;
   /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 500;
   padding: 10px;
   border-radius: 5px;
   border-bottom: 2px solid #EFBD07;
@@ -155,12 +154,14 @@ a:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+  color: #0B0C10;
+  text-decoration: line-through;
+  background-color: #67560f;
 }
 
 .button.contact {
   background-color: transparent;
   color: #EFBD07;
-  text-transform: uppercase;
   border: 2px solid #EFBD07;
   margin: 20px;
 }
@@ -446,7 +447,7 @@ Medium devices (640px and larger)
     margin-top: 4px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
     max-width: 100%;
   }
@@ -467,9 +468,7 @@ Medium devices (640px and larger)
     margin: 1em 0;
   }
 
-
-
-
+  
 }
 
 /* ==============================
