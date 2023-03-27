@@ -73,7 +73,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.35em;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
 }
 
@@ -116,8 +116,7 @@ a {
 }
 
 a:hover {
-  color: #cc6540;
-  text-decoration: underline;
+  text-decoration: line-through;
   /* Underlining when hovering over a link */
 }
 
@@ -177,7 +176,7 @@ a:hover {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
   bottom: 30px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
+  right: 90px; /* Place the button 90px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -186,46 +185,14 @@ a:hover {
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 5px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 16px; /* Increase font size */
+  font-weight: 500;
 }
 
 #topBtn:hover {
-  background-color: #ad9114; /* Add a dark-grey background on hover */
+  background-color: #67560f; /* Add a dark-grey background on hover */
+  text-decoration: line-through;
 }
-
-#jmpMenu {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  top: 0px; /* Place the button at the top of the page */
-  margin: 0;
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: #0B0C10; /* Set a background color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 5px; /* Some padding */ 
-  font-size: 18px; /* Increase font size */
-}
-
-#jmpMenu > ul {
-  margin: auto;
-  width: 100vw;
-  padding: 5px;
-}
-
-#jmpMenu > ul > li {
-  display: inline-block;
-  padding: 20px;
-}
-
-#jmpMenu > ul > li > a {
-  padding: 0 10px;
-  border-bottom: 10px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #EFBD07;
-}
-
 
 
 
@@ -233,6 +200,8 @@ a:hover {
 
 
 /* Layout styling */
+
+
 
 .container {
   padding: 0 10px;
@@ -245,9 +214,15 @@ a:hover {
   padding: 0;
 }
 
+.container > p {
+  margin: 50px 40px 50px 40px;
+  text-align: center;
+}
+
 .row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+  text-align: center;
+  
 }
 
 
@@ -309,14 +284,14 @@ nav {
   width: 100%;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
@@ -357,6 +332,7 @@ main {
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
+
 
 
 
@@ -416,12 +392,13 @@ main {
 /*clear page flow*/
 .row::after {
   content: "";
+  text-align: center;
   clear: both;
   display: table;
 }
 
 [class*="col-"] {
-  float: left;
+  text-align: center;
   display: inline-block;
   padding: 15px;
 }
@@ -464,7 +441,7 @@ Medium devices (640px and larger)
     width: 50%;
   }
 
-  nav>ul {
+  nav > ul {
     margin: 1em 0;
   }
 
@@ -514,6 +491,39 @@ Large devices (1024px or larger)
     }
   }
 
+
+  #jmpMenu {
+    overflow: hidden;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    top: 0px; /* Place the button at the top of the page */
+    margin: 0;
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #0B0C10; /* Set a background color */
+    cursor: pointer; /* Adds pointer on hover */
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  #jmpMenu > ul {
+    margin: auto;
+    text-align: center;
+  }
+  
+  #jmpMenu > ul > li {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  #jmpMenu > ul > li > a {
+    padding: 0 10px;
+    border-bottom: 10px;
+    font-weight: 700;
+    color: #EFBD07;
+  }
+  
 
 }
 
