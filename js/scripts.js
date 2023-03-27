@@ -44,14 +44,13 @@ function topFunction() {
 }
 
 
-
 // Jump Menu:
 let jumpmenu = document.getElementById("jmpMenu");
 
-// When the user scrolls down 30px from the top of the document, menu
-window.onscroll = function() {jumpFunction()};
+// When the user scrolls down 20px from the top of the document, show the button
+window.addEventListener('scroll', displayMenu);
 
-function jumpFunction() {
+function displayMenu() {
   if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
     jumpmenu.style.display = "block";
   } else {
@@ -59,8 +58,9 @@ function jumpFunction() {
   }
 }
 
-// When the user clicks on the section, scrolls to that section
-function jumpFunction() {
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
