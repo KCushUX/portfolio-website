@@ -2,30 +2,31 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Kweku Cush">
-  <meta name="description" content="This is the page for PlutoPay">
-  <title>PlutoPay</title>
+  <meta name="description" content="This is the home page of my website">
+  <title>K. Cush UX/UI Portfolio</title>
   <link rel="icon" type="img/favicon" href="img/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body id="project-page">
+<body>
 
   <header>
     <!-- for the header -->
 
     <div class="container"><!-- For the navigation -->
       <div class="navtoggle" id="myNavtoggle">
-        <a href="index.html"> <img src="img/logo_one.png" class="logo" alt="K. Cush"></a>
         <nav>
+          <a href="index.html"><img src="img/logo_one.png" class="logo" alt="K. Cush"></a>
           <ul id="navigation">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li>
@@ -34,6 +35,9 @@
             </li>
           </ul>
         </nav>
+        <div id="hero"><!-- For my hero section -->
+          <h1>PlutoPay</h1>
+        </div><!-- Hero section end -->
       </div>
     </div>
   </header>
@@ -49,28 +53,28 @@
         <li><a href="#final_design">Final Design</a><br></li>
       </ul>
     </div>
-    <div id="hero">
-      <!-- Project section title -->
-      <div class="container">
-        <h1>PlutoPay</h1>
-        <picture>
-          <source srcset="img/plutopay/mobileScreens/plutopay_mock_two.png" media="(max-width:767px)">
-          <img src="img/plutopay/desktopScreens/plutopay_mock_one.png" alt="PlutoPay App Mockup">
-        </picture>
-        <p>
-          <!-- Open paragraph -->
-          PlutoPay is a responsive web application that helps users find the fun in completing financial goals. There is
-          a suite of tools that support and challenge users on their financial journeys.
-        </p><!-- End paragraph -->
-      </div>
-    </div><!-- Project section title end -->
 
+    <!-- Project section title -->
+    <div class="container">
+      <picture>
+        <source srcset="img/plutopay/mobileScreens/plutopay_mock_two.png" media="(max-width:767px)">
+        <img src="img/plutopay/desktopScreens/plutopay_mock_one.png" alt="PlutoPay App Mockup">
+      </picture>
+      <p>
+        <!-- Open paragraph -->
+        PlutoPay is a responsive web application that helps users find the fun in completing financial goals. There is
+        a suite of tools that support and challenge users on their financial journeys.
+      </p><!-- End paragraph -->
+    </div>
     <div>
+
       <!-- Process start -->
       <div class="container">
         <!-- Section start -->
-        <h2 id="overview">Overview</h2><!-- Section header -->
-
+        <br id="overview">
+        <br>
+        <h2>Overview</h2><!-- Section header -->
+        <br>
         <h3>Problem statement</h3><!-- Section header -->
         <p>
           <!-- Open paragraph -->
@@ -79,7 +83,7 @@
           but these apps are still missing user-centric features. So, the question posed
           is how do we solve the issues users are currently facing, and how do we keep it user-focused?
         </p><!-- End paragraph -->
-
+        <br>
         <h3>My solution</h3><!-- Section header -->
         <p>
           <!-- Open paragraph -->
@@ -101,7 +105,9 @@
             <source srcset="img/plutopay/mobileScreens/paypal_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/paypal_one.png" alt="Paypal logo">
           </picture>
-          <h3 id="market_research">Market Research</h3><!-- Section header -->
+          <br id="market_research">
+        <br>
+          <h3>Market Research</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
             First, I analyzed competitors like PayPal and Google Pay. I wanted to understand their strengths and
@@ -117,7 +123,9 @@
             <source srcset="img/plutopay/mobileScreens/user_research_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/user_research_one.png" alt="User research">
           </picture>
-          <h3 id="user_research">User research</h3><!-- Section header -->
+          <br id="user_research">
+        <br>
+          <h3>User research</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
             I conducted five user interviews, speaking with two participants on March 28th and three on March 29th of
@@ -144,7 +152,9 @@
             <source srcset="img/plutopay/mobileScreens/victoria_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/victoria_one.png" alt="Victoria persona">
           </picture>
-          <h3 id="persona_journey">User personas &amp; flows</h3><!-- Section header -->
+          <br id="persona_journey">
+        <br>
+          <h3>User personas &amp; flows</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
             I worked with three user personas: Victoria, Jack, and Kato. These personas
@@ -177,7 +187,9 @@
             <source srcset="img/plutopay/mobileScreens/old_wf_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/old_wf_one.png" alt="Original wireframes">
           </picture>
-          <h3 id="prototyping">Wireframes</h3><!-- Section header -->
+          <br id="prototyping">
+        <br>
+          <h3>Wireframes</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
             Once my sitemap was done and I had the structure in my head, I began to create
@@ -210,7 +222,9 @@
             <source srcset="img/plutopay/mobileScreens/new_wf_two.png" media="(max-width:767px)">
             <img src="img/plutopay/desktopScreens/new_wf_one.png" alt="Updated wireframes">
           </picture>
-          <h3 id="final_design">Improved wireframes</h3><!-- Section header -->
+          <br id="final_design">
+        <br>
+          <h3>Improved wireframes</h3><!-- Section header -->
           <p>
             <!-- Open paragraph -->
             For my iteration of PlutoPay, I included rewards to entice and make user interactions
