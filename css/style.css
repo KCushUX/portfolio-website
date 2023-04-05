@@ -179,6 +179,11 @@ img {
   padding: 10px;
 }
 
+svg {
+  width: 90%;
+  display: block;
+  margin: auto;
+}
 
 
 
@@ -378,7 +383,7 @@ h4 {
 /*////// CSS Animation //////*/
 
 
-#UI {
+#skeleton {
   animation: fadeInUp 4s;
 }
 
