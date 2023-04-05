@@ -170,6 +170,14 @@ img {
   text-align: center;
 }
 
+.project {
+  /* styles for my about image*/
+  max-width: 300px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
 
 .socials {
   /* styles for social logos*/
@@ -337,10 +345,9 @@ h4 {
 
 #jmpMenu {
   overflow: hidden;
-  display: none;
   /* Hidden by default */
+  display: none;
   position: fixed;
-  /* Fixed/sticky position */
   top: 0px;
   /* Place the button at the top of the page */
   margin: 0;
