@@ -47,12 +47,16 @@ body {
   padding: 0;
 }
 
-div.work>p {
-  text-align: center;
-  vertical-align: middle;
-  display: table-cell;
+div.work {
+text-align: center;
   padding: 20px;
+  border-top: 3px solid #EFBD07;
 }
+
+div.work>p {
+  padding: 15px;
+}
+
 
 .row {
   margin: 25px 0;
@@ -113,7 +117,6 @@ a {
   /* selected link */
   color: #EFBD07;
 }
-
 
 
 .navtoggle li:not(:last-child) {
@@ -188,6 +191,7 @@ img {
 }
 
 svg {
+  /* styles for SVG's*/
   width: 90%;
   display: block;
   margin: auto;
@@ -252,6 +256,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 500;
+  padding: 20px;
 }
 
 h4 {
@@ -554,7 +559,7 @@ X-large devices (1440px or larger)
   display: table;
 }
 
-.container {
+.container {ainer
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
