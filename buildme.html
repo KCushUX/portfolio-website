@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kweku Cush">
+    <meta name="description" content="This is the home page of my website">
+    <title>K. Cush UX/UI Portfolio</title>
+    <link rel="icon" type="img/favicon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- for the header -->
+
+        <div class="container"><!-- For the navigation -->
+            <div class="navtoggle" id="myNavtoggle">
+                <nav>
+                    <a href="index.html"><img src="img/logo_one.png" class="logo" alt="K. Cush"></a>
+                    <ul id="navigation">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li>
+                            <p id="click_advance"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                        class="fas fa-bars"></i></a></p>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="hero"><!-- For my hero section -->
+                    <h1><span>BuildMe</span></h1>
+                </div><!-- Hero section end -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div onclick="jumpFunction()" id="jmpMenu">
+            <ul>
+                <li><a href="#overview">Overview</a><br></li>
+                <li><a href="#market_research">Market Research</a><br></li>
+                <li><a href="#user_research">User Research</a><br></li>
+                <li><a href="#persona_journey">Persona &amp; Flows</a><br></li>
+                <li><a href="#prototyping">Wireframes &amp; Prototypes</a><br></li>
+                <li><a href="#final_design">Final Design</a><br></li>
+            </ul>
+        </div>
+
+        <div>
+            <picture>
+                <source srcset="img/plutopay/mobileScreens/plutopay_mock_two.png" media="(max-width:767px)">
+                <img src="img/plutopay/desktopScreens/plutopay_mock_one.png" class="project" alt="PlutoPay App Mockup">
+            </picture>
+            <br>
+            <p class="container">
+                <span>BuildMe is a habit tracker</span> that aims to help users achieve their goals and break bad habits. 
+                Its unique features and user-friendly interface make it stand out from other apps. 
+            </p>
+        </div>
+
+        <div>
+            <div class="container">
+                <br id="overview">
+                <h2><span>I. Overview </span></h2><!-- Section header -->
+
+                <p>
+                    Have you ever woken up with the motivation or urge to accomplish a new goal? 
+                    As you embark on this journey you realize you don't know where to start. 
+                    You begin to realize it's tough to eliminate bad habits and start new ones. 
+                    Nowadays, lots of people have turned to habit-tracking apps to help them out. 
+                    Due to factors like technology fatigue many users find themselves going through the motions and have a hard time staying committed to the process of betterment. 
+                    In this case study, we will explore the effectiveness of BuildMe and the features my team designed to combat the pain points.
+                </p>
+                <div class="row">
+                    <!-- row for columns -->
+                    <div class="column col-md-6 col-lg-7">
+
+                        <h3>Problem statement</h3><!-- Section header -->
+                        <p>
+                            When it comes to setting realistic goals, prioritizing our values, and being accountable how can we motivate and entice users to work on themselves? 
+                            With the increasing prevalence of distractions and device usage, it's important to find a way to strike a balance in our digital habits. 
+                            As we adapt to the ever-evolving digital landscape, it's crucial that we approach it with mindfulness and intention. 
+                        </p>
+
+                    </div><!-- first column end-->
+
+
+                    <div class="column col-md-6 col-lg-5">
+                        <h3>My solution</h3><!-- Section header -->
+                        <p>
+                            <!-- Open paragraph -->
+                            As my team discovered habit creation is influenced by a combination of intrinsic and extrinsic factors. 
+                            So our proposed solution is a well-organized application that implements features built around this fact to 
+                            help users become aware of these factors and also help them stay focused on habits that can help them reach their goals.
+                        </p><!-- End paragraph -->
+                    </div>
+                </div><!-- Row end -->
+
+
+
+                <div class="work">
+                    <br id="market_research">
+                    <h3>Market Research</h3><!-- Section header -->
+                    <div class="column col-md-6 col-lg-7">
+                        <picture>
+                            <source srcset="img/plutopay/mobileScreens/googlepay_two.png" media="(max-width:767px)">
+                            <img src="img/plutopay/desktopScreens/googlepay_one.png" class="project"
+                                alt="Google Pay logo">
+                        </picture>
+                    </div>
+
+                    <div class="column col-md-6 col-lg-5">
+                        <picture>
+                            <source srcset="img/plutopay/mobileScreens/paypal_two.png" media="(max-width:767px)">
+                            <img src="img/plutopay/desktopScreens/paypal_one.png" class="project" alt="Paypal logo">
+                        </picture>
+                    </div>
+                    <p>
+                        <!-- Open paragraph -->
+                        First, I analyzed competitors like PayPal and Google Pay. I wanted to understand their strengths
+                        and
+                        weaknesses in a broader sense to find a gap in the market. After conducting market research, I
+                        compiled all
+                        the information on each competitor and created a S.W.O.T. analysis. This helped me initiate
+                        ideas of what
+                        users might expect from my app. I also broke down what competitors are doing right to solve
+                        their user's
+                        problems and ways they are underserving.
+                    </p><!-- End paragraph -->
+                </div>
+
+                <div class="work">
+                    <br id="user_research">
+                    <h3>User research</h3><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/user_research_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/user_research_one.png" alt="User research">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        I conducted five user interviews, speaking with two participants on March 28th and three on
+                        March 29th of
+                        2022. Each participant was excited to help me understand their financial app experiences. Each
+                        interviewee
+                        had a different career and varying attitudes toward finances. With the data recorded, I had a
+                        good amount of
+                        information to categorize.
+                    </p><!-- End paragraph -->
+                    <h3>Insights</h3><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/insights_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/insights_one.png" alt="Insights">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        Social aspects, Financial tools, and Usability.
+                    </p><!-- End paragraph -->
+                </div>
+
+
+
+                <div class="work">
+                    <br id="persona_journey">
+                    <h3>User personas &amp; flows</h3><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/victoria_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/victoria_one.png" alt="Victoria persona">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        I worked with three user personas: Victoria, Jack, and Kato. These personas
+                        were created to help me understand my target audiences. Once I had a general idea of the type of
+                        users that
+                        would use my application I created a
+                        few user flows like the one below to simulate what their work flows would look like within
+                        the application. Below is a user flow that illustrates what users like Victoria would try to
+                        accomplish:
+                    </p><!-- End paragraph -->
+                </div>
+
+                <div class="work">
+                    <br id="prototyping">
+                    <h3>Wireframes</h3><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/old_wf_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/old_wf_one.png" alt="Original wireframes">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        Once my sitemap was done and I had the structure in my head, I began to create
+                        drafts of how the application would look. I created a few sketches by hand and
+                        digitally before committing to one that felt like it made the most sense. The rapid
+                        prototyping phase was very flexible. I was able to focus on the "big picture" ideas
+                        without getting caught up in details.
+                        Below is an example of how user onboarding will be handled within the
+                        application.
+                    </p><!-- End paragraph -->
+
+                    <h3>Card sorting &amp; site map</h3><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/affinity_map_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/affinity_map_one.png" alt="Affinity map">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        I implemented a hybrid card sort blending the closed and open card sorts.
+                        Through card sorting, I could see how users interacted with the information being
+                        considered for my version of this type of application and validate my hypothesis. Users
+                        categorized the
+                        content in a way logical to them which helped me
+                        consolidate my site map.
+                    </p><!-- End paragraph -->
+                </div>
+
+
+
+                <div class="work">
+                    <br id="final_design">
+                    <br>
+                    <h3>Design</h3><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/style_guide_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/style_guide_one.png" alt="Style guide">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        Purple will serve as the primary color for PlutoPay due to its psychology and history of
+                        having luxurious qualities. The other colors selected will be used for illustrations and
+                        complimenting elements like alerts.
+                    </p><!-- End paragraph -->
+                    <h3>Improved wireframes</h3><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/new_wf_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/new_wf_one.png" alt="Updated wireframes">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        For my iteration of PlutoPay, I included rewards to entice and make user interactions
+                        more meaningful. I will incorporate app-suggested finance challenges and
+                        user-generated challenges against contacts similar to challenges on the Apple fitness
+                        app. In the badge feature, I designed, I want to include rewards for users to unlock as
+                        they use the application.
+                    </p><!-- End paragraph -->
+
+                    <h3>Conclusion</h3><!-- Section header -->
+                    <p>
+                        <!-- Open paragraph -->
+                        My original hypothesis still encapsulates what I am trying to solve for users in this
+                        sector. Users want a finance application that helps them enjoy handling their finances.
+                        People are always looking for a finance app that is convenient and easy to use, but
+                        they're aren't many that are fun to use. My proposed solution of introducing gamifying
+                        features is viable but there is additional research that needs to be done. Subsequent
+                        user testing may change into a form of beta testing for full workflows on a live version of
+                        the app. Iterative design is flexible in this aspect because it allows for these changes to
+                        take place essentially at any stage.
+                    </p><!-- End paragraph -->
+                </div>
+
+
+
+            </div>
+        </div>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    </main>
+
+    <footer id="contact">
+        <!-- For the footer -->
+        <div class="container">
+            <h2>
+                Get in touch!
+            </h2>
+            <p>
+                Do you like my work and want to discuss opportunities?
+                <br>
+                Please get in touch by calling 631-440-20009 Or send me a message using the button below.
+            </p>
+
+            <div>
+                <!-- For contact links-->
+                <a href="mailto:KCUX@gmail.com" class="button contact">Email me</a>
+            </div>
+
+            <div class="socials">
+                <!--Social media layout and placeholders-->
+
+                <a href="https://www.linkedin.com/in/kwekucush/" target="_blank">
+                    <!-- LinkedIn Icon -->
+                    <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <style type="text/css">
+                            .st0 {
+                                fill: #1387C8;
+                            }
+
+                            .st1 {
+                                fill: #FFFFFF;
+                            }
+                        </style>
+                        <g>
+                            <path class="st0"
+                                d="M512,397.1c0,63.5-51.4,114.9-114.9,114.9H114.9C51.5,512,0,460.6,0,397.1V114.9C0,51.5,51.5,0,114.9,0h282.2   C460.6,0,512,51.5,512,114.9V397.1z" />
+                            <g>
+                                <path class="st1"
+                                    d="M142.3,212.9h53.4v171.6h-53.4V212.9z M169,127.5c17.1,0,30.9,13.9,30.9,30.9c0,17.1-13.9,31-30.9,31    c-17.1,0-31-13.9-31-31C138.1,141.4,151.9,127.5,169,127.5" />
+                                <path class="st1"
+                                    d="M229.2,212.9h51.2v23.5h0.7c7.1-13.5,24.5-27.7,50.5-27.7c54,0,64,35.5,64,81.7v94.1h-53.3V301    c0-19.9-0.4-45.5-27.7-45.5c-27.8,0-32,21.7-32,44v84.9h-53.3V212.9z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <!--Social media layout and placeholders end-->
+
+            <p>Copyright Kweku Cush 2023</p>
+        </div>
+    </footer> <!-- Footer end -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/d72eb3ec58.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

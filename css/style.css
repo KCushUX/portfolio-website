@@ -237,6 +237,14 @@ svg {
   color: #EFBD07;
 }
 
+#hero h2 span {
+  color: #EFBD07;
+}
+
+p > span {
+  color: #EFBD07;
+}
+
 h1,
 h2,
 h3,
