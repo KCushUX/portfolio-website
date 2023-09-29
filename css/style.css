@@ -248,7 +248,8 @@ p > span {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   line-height: 1.4;
 }
 
@@ -273,11 +274,19 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-weight: 300;
+}
+
 #contact h2 {
   text-align: center;
   /* Centers text */
 }
 
+.center {
+  text-align: center;
+  list-style-position: inside;
+}
 
 
 
