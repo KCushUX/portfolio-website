@@ -260,7 +260,7 @@ svg {
 
 .page img {
   max-width: 100px;
-  object-fit: cover;
+  object-fit:contain;
   margin-bottom: 20px;
 }
 
@@ -340,6 +340,11 @@ h4 {
 
 h5 {
   font-weight: 300;
+}
+
+h6 {
+  font-weight: 800;
+  color: black;
 }
 
 #contact h2 {
