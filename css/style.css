@@ -223,6 +223,70 @@ svg {
   width: 100%;
 }
 
+.links {
+  /* styles for my links cards*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.page {
+  display: inline-block;
+  width: 310px;
+  padding: 20px 35px;
+  background: white;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #000000;
+}
+
+.page img {
+  max-width: 100px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.page-card {
+  color: #000000;
+  border-radius: 25px;
+  justify-content: center;
+  min-height: 200px;
+  display: inline-block;
+  width: 310px;
+  padding: 20px 35px;
+  background: transparent;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pra p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.6;
+  padding-top: 15px;
+}
+
 
 
 /* //////// Text Styling /////// */
@@ -506,6 +570,12 @@ Medium devices (640px and larger)
     margin: 1em 0;
   }
 
+  .links {
+    width: 100%;
+    display: block;
+    align-items: center;
+    flex-direction: row;
+  }
 
 }
 
