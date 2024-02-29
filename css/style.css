@@ -200,6 +200,31 @@ svg {
 
 
 
+
+
+/* //////// GRID Styling /////// */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the width of each grid item as needed */
+  grid-gap: 20px; /* Adjust the gap between grid items */
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info {
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
 /* //////// Sections Styling /////// */
 #hero {
   font-family: 'Source Serif Pro', serif;
