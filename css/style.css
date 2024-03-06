@@ -36,6 +36,9 @@ body {
   color: #C7C7C7;
 }
 
+ul {
+  list-style: none;
+}
 
 .container {
   padding: 10px 10%;
