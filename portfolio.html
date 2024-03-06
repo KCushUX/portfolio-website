@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kweku Cush">
+    <meta name="description" content="This is the home page of my website">
+    <title>K. Cush UX/UI Portfolio</title>
+    <link rel="icon" type="img/favicon" href="img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <!-- for the header -->
+
+        <div class="container"><!-- For the navigation -->
+            <div class="navtoggle" id="myNavtoggle">
+                <nav>
+                    <a href="index.html"><img src="img/logo_one.png" class="logo" alt="K. Cush"></a>
+                    <ul id="navigation">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                        <li>
+                            <p id="click_advance"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+                                        class="fas fa-bars"></i></a></p>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="hero"><!-- For my hero section -->
+                    <h1>My Portfolio</h1>
+                </div><!-- Hero section end -->
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div onclick="jumpFunction()" id="jmpMenu">
+            <ul>
+                <li><a href="#overview">Overview</a><br></li>
+                <li><a href="#goals">Goals</a><br></li>
+                <li><a href="#context">Context &amp; Challenge</a><br></li>
+                <li><a href="#process">Process &amp; Insights</a><br></li>
+                <li><a href="#finding">Findings &amp; Implementation</a><br></li>
+                <li><a href="#conclusion">Conclusion &amp; Reflection</a><br></li>
+            </ul>
+        </div>
+
+        <div>
+            <picture>
+                <source srcset="img/portfolio/mobileScreen/port_mockup_mobile.png" media="(max-width:767px)">
+                <img src="img/portfolio/desktopScreen/port_mockup_desktop.png" class="project" alt="PlutoPay App Mockup">
+            </picture>
+            <br>
+            <p class="container">
+                PlutoPay is a responsive web application that helps users find the fun in completing financial goals.
+                <br>There is a suite of tools that support and challenge users on their financial journeys.
+            </p>
+        </div>
+
+        <div>
+            <div class="container">
+                <br id="overview">
+                <h3>Overview</h3><!-- Section header -->
+                <div class="row">
+                    <!-- row for columns -->
+                    <div>
+
+                        <h3>Problem statement</h3><!-- Section header -->
+                        <p>
+                            How do you channel design, code, and personality into a compelling portfolio? 
+                            This was the question that kept me up at night. An online portfolio shouldn’t be 
+                            viewed only as a way for clients and employers to contact you but as a place to 
+                            display my skills and design thinking in an inventive way. Compiling the “right” 
+                            elements to show was an ordeal itself, but learning and applying front-end skills 
+                            added an extra level of complexity to the project.
+                            The desired outcome was to design a website suitable for a professional in this industry. 
+                            Additionally, creating a functional site to showcase my work has given me insight into how 
+                            I may need to communicate with developers in the future. 
+                        </p>
+                    </div><!-- first column end-->
+                    
+                    <div class="column col-md-6 col-lg-5">
+                        <h3>Tools</h3><!-- Section header -->
+                        <ul>
+                            <li>Figma</li>
+                            <li>Git-Hub</li>
+                            <li>VSCode</li>
+                          </ul>
+                    </div>
+
+
+
+                    <div class="column col-md-6 col-lg-5">
+                        <h3>Coding Language</h3><!-- Section header -->
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                          </ul>
+                    </div>
+
+
+                    
+                    
+                    <div class="column col-md-6 col-lg-5">
+                        <h3>Roles</h3><!-- Section header -->
+                        <ul>
+                            <li>Designer</li>
+                            <li>Front-End Developer</li>
+                          </ul>
+                    </div>
+
+
+
+
+                    <div>
+
+                        <h3>Project Duration</h3><!-- Section header -->
+                        <p>
+                            February 2023 - April 2023 <br>
+                            Two Months
+                        </p>
+                    </div><!-- first column end-->
+
+
+
+                </div><!-- Row end -->
+
+
+
+                <div class="work">
+                    <br id="goals">
+                    <h2>Goals</h2><!-- Section header -->
+
+                    <ul>
+                        <li>1. My goal was to build an online presence.</li><br>
+                        <li>2. Showcase my design thinking.</li><br>
+                        <li>3. Develop my front-end skills.</li><br>
+                      </ul>
+                </div>
+
+                <div class="work">
+                    <br id="context">
+                    <h2>Context &amp; Challenges</h2><!-- Section header -->
+
+                    <div class="row">
+                    <picture>
+                        <source srcset="img/plutopay/mobil" media="(max-width:767px)">
+                        <img src="img/plutopay/desktop" alt="User research">
+                    </picture>
+
+                    <h3>Background &amp; Description</h3>
+                    <p>
+                        <!-- Open paragraph -->
+                       
+                        The objective of this project was to design and code a professional 
+                        web-page to host my design work. The completed online portfolio would 
+                        allow prospective employers to learn about me and contact me for future 
+                        opportunities. The project was to be completed in two months. Despite the 
+                        timeline, the project would be open for further development and improvements.
+                    </p><!-- End paragraph -->
+
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/" media="(max-width:767px)">
+                        <img src="img/" alt="Insights">
+                    </picture>
+                    
+
+
+                    <div class="column col-md-6 col-lg-7">
+
+                        <h3>Problem statement</h3><!-- Section header -->
+                        <p>
+                            I’m currently looking for a way to position myself in the UX/UI 
+                            design industry. To do this, not only did I need to showcase and 
+                            explain my skills but design a fitting way to do so with my newly 
+                            learned coding ability.
+                        </p>
+                    </div><!-- first column end-->
+
+
+                    <div class="column col-md-6 col-lg-5">
+                        <h3>My solution</h3><!-- Section header -->
+                        <p>
+                            <!-- Open paragraph -->
+                            A well-organized professional website that displays 
+                            my current work and helps me implement my new front-end skills.
+                        </p><!-- End paragraph -->
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                </div>
+
+
+                <div class="work">
+                    <br id="process">
+                    <h2>Process &amp; Insights</h2><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScree" alt="Victoria persona">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        Before embarking on the journey of building an online portfolio, 
+                        I needed to seek help. Developing a professional connection 
+                        with a mentor through Career Foundry was an important step to 
+                        completing this project. This mentor offered support and insight 
+                        while designing and coding my web page.
+                    </p><!-- End paragraph -->
+                    <br>
+                    <br>
+                    <h3>Infromation &amp; Element Gathering</h3>
+                    <br>
+                    <p>
+                        <!-- Open paragraph -->
+                        First, I compiled all the information and the work to showcase. 
+                        I combined all these elements to create a rough outline of how 
+                        the website should look. I included the process of researching 
+                        color schemes, fonts, and specific features I wanted to include 
+                        during this phase. Black has the psychological effect of feeling 
+                        formal and sophisticated leading me to make it the main shade 
+                        for my portfolio. Yellow is a stronger color that can make 
+                        illustrations and content feel more exciting and capture attention.
+                    </p><!-- End paragraph -->
+
+                    <picture>
+                        <source srcset="img/portfolio/desktopScreen/ui_elements.png" media="(max-width:767px)">
+                        <img src="img/portfolio/desktopScreen/ui_elements.png" alt="UI Elements">
+                    </picture>
+
+                    <h3>Wireframe &amp; Iterations</h3>
+                    <br>
+                    <p>
+                        <!-- Open paragraph -->
+                        I was supplied with simple design instructions to follow for 
+                        the base look of my website. I analyzed these documents 
+                        similarly to how a designer would analyze a business document and requirement list.
+                    </p><!-- End paragraph -->
+
+                    <picture>
+                        <source srcset="img/portfolio/desktopScreen/ui_elements.png" media="(max-width:767px)">
+                        <img src="img/portfolio/desktopScreen/ui_elements.png" alt="UI Elements">
+                    </picture>
+
+
+                </div>
+
+                <div class="work">
+                    <br id="finding">
+                    <h2>Findings Implementation </h2><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/old_wf_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/old_wf_one.png" alt="Original wireframes">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        Once my sitemap was done and I had the structure in my head, I began to create
+                        drafts of how the application would look. I created a few sketches by hand and
+                        digitally before committing to one that felt like it made the most sense. The rapid
+                        prototyping phase was very flexible. I was able to focus on the "big picture" ideas
+                        without getting caught up in details.
+                        Below is an example of how user onboarding will be handled within the
+                        application.
+                    </p><!-- End paragraph -->
+
+                    <h2>Implamentation Overview</h2><!-- Section header -->
+                    <picture>
+                        <source srcset="img/plutopay/mobileScreens/affinity_map_two.png" media="(max-width:767px)">
+                        <img src="img/plutopay/desktopScreens/affinity_map_one.png" alt="Affinity map">
+                    </picture>
+                    <p>
+                        <!-- Open paragraph -->
+                        I implemented a hybrid card sort blending the closed and open card sorts.
+                        Through card sorting, I could see how users interacted with the information being
+                        considered for my version of this type of application and validate my hypothesis. Users
+                        categorized the
+                        content in a way logical to them which helped me
+                        consolidate my site map.
+                    </p><!-- End paragraph -->
+                </div>
+
+
+
+                <div class="work">
+                    <br id="conclusion">
+                    <br>
+                    <h2>Conclusion &amp; Reflection</h2><!-- Section header -->
+                    
+                    <p>
+                        <!-- Open paragraph -->
+                        I decided to run a live version of my website through GitHub as I research web hosting 
+                        and domain options. For me, this is the best environment to further develop and improve 
+                        my website. The process of learning three coding languages and applying my design skills 
+                        was grueling, but I appreciated it. I can apply the insights I gained to my future endeavors. 
+                        Having this website has provided me with an opportunity to build my online presence.
+                    </p><!-- End paragraph -->
+                    
+                </div>
+
+
+
+            </div>
+        </div>
+        <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+    </main>
+
+    <footer id="contact">
+        <!-- For the footer -->
+        <div class="container">
+            <h2>
+                Get in touch!
+            </h2>
+            <p>
+                Do you like my work and want to discuss opportunities?
+                <br>
+                Please get in touch by calling 631-440-20009 Or send me a message using the button below.
+            </p>
+
+            <div>
+                <!-- For contact links-->
+                <a href="mailto:KCUX@gmail.com" class="button contact">Email me</a>
+            </div>
+
+            <div class="socials">
+                <!--Social media layout and placeholders-->
+
+                <a href="https://www.linkedin.com/in/kwekucush/" target="_blank">
+                    <!-- LinkedIn Icon -->
+                    <svg id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512"
+                        xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <style type="text/css">
+                            .st0 {
+                                fill: #1387C8;
+                            }
+
+                            .st1 {
+                                fill: #FFFFFF;
+                            }
+                        </style>
+                        <g>
+                            <path class="st0"
+                                d="M512,397.1c0,63.5-51.4,114.9-114.9,114.9H114.9C51.5,512,0,460.6,0,397.1V114.9C0,51.5,51.5,0,114.9,0h282.2   C460.6,0,512,51.5,512,114.9V397.1z" />
+                            <g>
+                                <path class="st1"
+                                    d="M142.3,212.9h53.4v171.6h-53.4V212.9z M169,127.5c17.1,0,30.9,13.9,30.9,30.9c0,17.1-13.9,31-30.9,31    c-17.1,0-31-13.9-31-31C138.1,141.4,151.9,127.5,169,127.5" />
+                                <path class="st1"
+                                    d="M229.2,212.9h51.2v23.5h0.7c7.1-13.5,24.5-27.7,50.5-27.7c54,0,64,35.5,64,81.7v94.1h-53.3V301    c0-19.9-0.4-45.5-27.7-45.5c-27.8,0-32,21.7-32,44v84.9h-53.3V212.9z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <!--Social media layout and placeholders end-->
+
+            <p>Copyright Kweku Cush 2023</p>
+        </div>
+    </footer> <!-- Footer end -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://kit.fontawesome.com/d72eb3ec58.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
