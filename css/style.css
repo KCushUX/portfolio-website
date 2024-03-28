@@ -144,6 +144,7 @@ a {
   display: block;
   padding: 10px 0;
   border-top: 1px solid #C7C7C7;
+  border: none;
 }
 
 .navtoggle.responsive li:last-child {
@@ -222,6 +223,70 @@ svg {
   width: 100%;
 }
 
+.links {
+  /* styles for my links cards*/
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.page {
+  display: inline-block;
+  width: 310px;
+  padding: 20px 35px;
+  background: white;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page i {
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #000000;
+}
+
+.page img {
+  max-width: 100px;
+  object-fit:contain;
+  margin-bottom: 20px;
+}
+
+.page-card {
+  color: #000000;
+  border-radius: 25px;
+  justify-content: center;
+  min-height: 200px;
+  display: inline-block;
+  width: 310px;
+  padding: 20px 35px;
+  background: transparent;
+  margin: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pra p {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: black;
+  line-height: 1.6;
+  padding-top: 15px;
+}
+
 
 
 /* //////// Text Styling /////// */
@@ -236,10 +301,19 @@ svg {
   color: #EFBD07;
 }
 
+#hero h2 span {
+  color: #EFBD07;
+}
+
+p > span {
+  color: #EFBD07;
+}
+
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5 {
   line-height: 1.4;
 }
 
@@ -251,6 +325,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 600;
+  color: #EFBD07;
 }
 
 h3 {
@@ -263,11 +338,24 @@ h4 {
   font-weight: 400;
 }
 
+h5 {
+  font-weight: 300;
+}
+
+h6 {
+  font-weight: 800;
+  color: black;
+}
+
 #contact h2 {
   text-align: center;
   /* Centers text */
 }
 
+.center {
+  text-align: center;
+  list-style-position: inside;
+}
 
 
 
@@ -487,6 +575,12 @@ Medium devices (640px and larger)
     margin: 1em 0;
   }
 
+  .links {
+    width: 100%;
+    display: block;
+    align-items: center;
+    flex-direction: row;
+  }
 
 }
 
